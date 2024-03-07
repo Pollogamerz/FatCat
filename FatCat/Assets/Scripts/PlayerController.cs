@@ -8,9 +8,19 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] float velocity;
     Renderer _renderer;
 
-    void Start()
+    void Awake()
     {
         _renderer = GetComponent<Renderer>();
+    }
+
+    public override void OnStartNetwork()
+    {
+        base.OnStartNetwork();
+        if (base.Owner.IsLocalClient) //IsOwner
+        {
+            _renderer.material.color = Color.green;
+            name += "- local";
+        }
     }
 
     void Update()
