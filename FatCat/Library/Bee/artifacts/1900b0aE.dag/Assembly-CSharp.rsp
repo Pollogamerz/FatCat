@@ -365,6 +365,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/FishNet/Upgrading/MirrorUpgrade.cs"
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
+"Assets/Scripts/ContadorTiempo.cs"
+"Assets/Scripts/PanelChat.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 
